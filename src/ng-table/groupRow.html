@@ -1,5 +1,5 @@
 <tr ng-if="params.hasGroup()" ng-show="$groupRow.show" class="ng-table-group-header">
-    <th colspan="{{getVisibleColumns().length}}" class="sortable" ng-class="{
+    <th colspan="{{getVisibleColumns().length}}" class="sortable {{class}}" ng-class="{
                     'sort-asc': params.hasGroup($selGroup, 'asc'),
                     'sort-desc':params.hasGroup($selGroup, 'desc')
                   }">
